@@ -1,5 +1,6 @@
 const cachorros = require('./database/cachorros.json');
-const fs = require('fs')
+const fs = require('fs');
+const { isNullOrUndefined } = require('util');
 
 module.exports = {
     listar: function(){
@@ -42,8 +43,22 @@ module.exports = {
         // fs.writeFilesSync('./database/cachorros.json', JSON.stringify(cachorros));
         fs.writeFileSync('./database/cachorros.json', JSON.stringify(cachorros));
     
+    },
+    vacinar: function (pos, nomeDaVacina){
+        if(pos >= cachorros.length || pos < 0){
+            console.log ("Cachorro inexistente");
+            return;
+        }
+        let novaVacina = {
+            nome: nomeDaVacina,
+            data: (new Date()).toISOString().substr(0,10)
+
+        }
+        cachorros[pos].vacinas.push(novaVacina);
+
+        fs.writeFileSync('./database/cachorros.json', JSON.stringify(cachorros,null,4));
     }
-        
+    
 
 }
 

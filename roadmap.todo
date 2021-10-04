@@ -1,20 +1,20 @@
 Construindo funções no arquivo funcoes.js
 
-☐ Crie uma função chamada listar
+✔ Crie uma função chamada listar @done(21-10-04 17:40)
   . Essa função deve imprimir no console uma tabela
     com as informações dos cachorros cadastrados.
     Dica: experimente a função console.table
   . Essa função não deve receber nenhum parâmetro
   . Essa função não deve retornar nada.
 
-☐ Crie uma função chamada descrever
+✔ Crie uma função chamada descrever @done(21-10-04 17:40)
   . Essa deve imprimir todas as informações de um cachorro.
   . Ela não deve receber o index do cachorro a ser descrito.
   . Ela não deve retornar nada como parâmetro.
   . Essa função deve imprimir uma mensagem "Cachorro inexistente"
     caso a posição passada não possua nenhum cachorro cadastrado.
 
-☐ Crie uma função chamada adicionar
+✔ Crie uma função chamada adicionar @done(21-10-04 17:40)
   . Essa função deve adicionar um novo cachorro no arquivo
     de cachorros.
   . Essa função deve receber como parâmetros *nesta ordem*
@@ -31,7 +31,7 @@ Construindo funções no arquivo funcoes.js
   . Salve o array de cachorros em forma de JSON no arquivo
     database/cachorros.json
 
-☐ Crie uma função chamada vacinar.
+✔ Crie uma função chamada vacinar. @done(21-10-04 18:23)
   . Essa função deve adicionar um objeto literal com
     as informações de uma vacina (nome e datahora da aplicação)
     no array de vacinas de um cachorro.
